@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>服务导航</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #374151;
+            letter-spacing: 2px;
+        }
+        ul {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        li {
+            background: #fff;
+            padding: 28px 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px #dbeafe;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        li:hover {
+            box-shadow: 0 8px 32px #a5b4fc;
+            transform: translateY(-4px) scale(1.02);
+        }
+        .domain {
+            font-weight: bold;
+            font-size: 1.15em;
+            color: #2563eb;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .link {
+            display: inline-block;
+            padding: 8px 20px;
+            background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1em;
+            box-shadow: 0 2px 8px #dbeafe;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .link:hover {
+            background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+            box-shadow: 0 4px 16px #a5b4fc;
+        }
+        @media (max-width: 600px) {
+            ul {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+            li {
+                padding: 18px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>阿钖服务导航</h1>
+    <ul>
+        <li>
+            <span class="domain">nas.ayangtun.dpdns.org</span>
+            <a class="link" href="http://nas.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">blog.ayangtun.dpdns.org</span>
+            <a class="link" href="http://blog.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">alist.ayangtun.dpdns.org</span>
+            <a class="link" href="http://alist.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">taosync.ayangtun.dpdns.org</span>
+            <a class="link" href="http://taosync.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">idphoto.ayangtun.dpdns.org</span>
+            <a class="link" href="http://idphoto.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">webui.ayangtun.dpdns.org</span>
+            <a class="link" href="http://webui.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">xunlei.ayangtun.dpdns.org</span>
+            <a class="link" href="http://xunlei.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">1panel.ayangtun.dpdns.org</span>
+            <a class="link" href="http://1panel.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">oec.ayangtun.dpdns.org</span>
+            <a class="link" href="http://oec.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">down.ayangtun.dpdns.org</span>
+            <a class="link" href="http://down.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">read.ayangtun.dpdns.org</span>
+            <a class="link" href="http://read.ayangtun.dpdns.org" target="_blank">访问</a>
+        </li>
+        <li>
+            <span class="domain">aayang.dpdns.org</span>
+            <a class="link" href="http://aayang.dpdns.org" target="_blank">访问</a>
+        </li>
+    </ul>
+</body>
+</html>
