@@ -94,6 +94,21 @@
             transition: all var(--transition-normal);
             font-family: 'SimSun', 'STSong', serif;
         }
+        /* Bing搜索栏样式 */
+        .search-box {
+            background: var(--card-bg);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--card-shadow);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+            border: 1px solid var(--border-color);
+            width: 100%;
+            box-sizing: border-box;
+            transition: all var(--transition-normal);
+        }
+        .search-box:hover {
+            box-shadow: var(--card-hover-shadow);
+        }
         .poetry:hover {
             box-shadow: var(--card-hover-shadow);
         }
@@ -628,6 +643,8 @@
                 <svg height="20" viewBox="0 0 16 16" fill="currentColor" style="margin-right:8px;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
                 我的GitHub主页
             </a>
+            <!-- Bing搜索栏 -->
+
             <div class="poetry" id="poetry" role="status" aria-live="polite">
                 <div class="poetry-title">每日诗词</div>
                 <div class="poetry-content">加载中...</div>
@@ -637,6 +654,13 @@
 
         <div class="main-content">
             <h1 class="main-title">阿钖服务导航</h1>
+            <!-- Bing搜索栏 -->
+            <div class="search-box" style="margin-bottom: var(--spacing-lg); width: 100%; max-width: 500px; margin-left: auto; margin-right: auto;">
+                <form action="https://www.bing.com/search" method="get" target="_blank" style="display: flex;">
+                    <input type="text" name="q" placeholder="搜索 Bing..." style="flex: 1; padding: 8px; border: 1px solid var(--border-color); border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm); outline: none; font-size: 0.9em;" required>
+                    <button type="submit" style="padding: 8px 10px; background: var(--primary-color); color: white; border: none; border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0; cursor: pointer; font-size: 0.9em; text-indent: -999px; overflow: hidden; width: 25px;">&nbsp;</button>
+                </form>
+            </div>
             <div class="sr-only">网站分类列表</div>
             <ul role="navigation" aria-label="网站链接列表">
                 <li>
